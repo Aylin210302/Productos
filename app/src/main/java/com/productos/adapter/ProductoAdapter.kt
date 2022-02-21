@@ -9,12 +9,6 @@ import com.productos.ui.producto.ProductoFragmentDirections
 
 class ProductoAdapter : RecyclerView.Adapter<ProductoAdapter.ProductoViewHolder>() {
 
-    private var listaProductos = emptyList<Producto>()
-
-    fun setData(productos : List<Producto>){
-        this.listaProductos = productos
-        notifyDataSetChanged()
-    }
 
     inner class ProductoViewHolder(private val itemBinding: ProductoFilaBinding)
         : RecyclerView.ViewHolder(itemBinding.root){
